@@ -26,7 +26,7 @@ pytest-cov = "^3.0.0"
 
 [tool.semantic_release]
 version_variable = [
-    "pytcm/__init__.py:__version__",
+    "pygitm/__init__.py:__version__",
 ]
 version_toml = [
     "pyproject.toml:tool.poetry.version"
