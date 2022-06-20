@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import getpass
+import os
+
+from pygitm.constants import PYGITM_PASSWORD, PYGITM_SSH_KEY, PYGITM_USERNAME
 
 
 class SSHAuth:
@@ -13,6 +16,10 @@ class SSHAuth:
             ssh_key = f.read()
         return cls(ssh_key)
 
+    @classmethod
+    def from_env(cls, ssh_key_var: str = PYGITM_SSH_KEY) -> None:
+        return cls(os.environ[ssh_key_var])
+
 
 class HTTPSAuth:
     def __init__(self, username: str, password: str) -> None:
@@ -20,7 +27,11 @@ class HTTPSAuth:
         self._password = password
 
     @classmethod
-    def from_prompt(cls):
-        username = getpass.getuser()
-        password = getpass.getpass()
-        return cls(username, password)
+    def from_prompt(cls) -> None:
+        return cls(getpass.getuser(), getpass.getpass())
+
+    @classmethod
+    def from_env(
+        cls, username_var: str = PYGITM_USERNAME, password_var: str = PYGITM_PASSWORD
+    ) -> None:
+        return cls(os.environ[username_var], os.environ[password_var])
