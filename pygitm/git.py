@@ -4,10 +4,17 @@ from functools import partial
 
 import pytcm
 
-from pygitm.options import (AddOptions, CheckoutOptions, CloneOptions,
-                            CommitOptions, PullOptions, PushOptions)
+from pygitm.options import (
+    AddOptions,
+    CheckoutOptions,
+    CloneOptions,
+    CommitOptions,
+    PullOptions,
+    PushOptions,
+)
 
-git_command = partial(pytcm.execute, 'git')
+git_command = partial(pytcm.execute, "git")
+
 
 def clone(opts: CloneOptions, cwd: str = ...) -> pytcm.CommandResult:
     return git_command(opts.to_list(), cwd)
