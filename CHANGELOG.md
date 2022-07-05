@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.4.1 (2022-07-05)
+### Fix
+* Test ([`7b63758`](https://github.com/alexisbeaulieu97/pygitm/commit/7b637583c2cbef0252743165540aea58644bcc77))
+
 ## v0.3.0 (2022-07-05)
 ### Feature
 * Added commands (clone, add, push, pull, checkout, commit) ([`8b822a1`](https://github.com/alexisbeaulieu97/pygitm/commit/8b822a10608e8312c53b3fe700e4bfb2db781e61))
