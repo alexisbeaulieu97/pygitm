@@ -4,4 +4,4 @@ from .git import add, checkout, clone, commit, pull, push
 from .options import (AddOptions, CheckoutOptions, CloneOptions,  # noqa: F401
                       CommitOptions, PullOptions, PushOptions)
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
