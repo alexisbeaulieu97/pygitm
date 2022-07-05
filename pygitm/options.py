@@ -118,7 +118,7 @@ class CheckoutOptions:
             pytcm.Flag("--force", self.force),
             pytcm.Flag("-b", self.new_branch),
             pytcm.Positional(self.ref_branch),
-            pytcm.Positional(self.branch)
+            pytcm.Positional(self.branch),
         ]
 
 
@@ -139,5 +139,5 @@ class CommitOptions:
             pytcm.Flag("--allow-empty-message", self.allow_empty_message),
             pytcm.Implicit("-m", self.message),
             pytcm.Implicit("-F", self.file_message),
-            pytcm.Positional(self.commit)
+            pytcm.Positional(self.commit),
         ]
