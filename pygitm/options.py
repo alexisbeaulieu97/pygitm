@@ -16,7 +16,7 @@ class CloneOptions:
     single_branch: bool = ...
     depth: int = ...
 
-    def opts(self) -> List[pytcm.Option]:
+    def to_list(self) -> List[pytcm.Option]:
         return [
             self.COMMAND,
             pytcm.Implicit("--branch", self.branch),
@@ -36,7 +36,7 @@ class AddOptions:
     verbose: bool = ...
     pathspec: List[str] = ...
 
-    def opts(self) -> List[pytcm.Option]:
+    def to_list(self) -> List[pytcm.Option]:
         pathspec = []
         if self.pathspec is not ...:
             pathspec = [pytcm.Positional(p) for p in self.pathspec]
@@ -60,7 +60,7 @@ class PushOptions:
     repository: str = ...
     refspec: str = ...
 
-    def opts(self) -> List[pytcm.Option]:
+    def to_list(self) -> List[pytcm.Option]:
         return [
             self.COMMAND,
             pytcm.Flag("--all", self.all_branches),
@@ -87,7 +87,7 @@ class PullOptions:
     repository: str = ...
     refspec: str = ...
 
-    def opts(self) -> List[pytcm.Option]:
+    def to_list(self) -> List[pytcm.Option]:
         return [
             self.COMMAND,
             pytcm.Flag("--all", self.all_remotes),
@@ -111,7 +111,7 @@ class CheckoutOptions:
     force: bool = ...
     new_branch: bool = ...
 
-    def opts(self) -> List[pytcm.Option]:
+    def to_list(self) -> List[pytcm.Option]:
         return [
             self.COMMAND,
             pytcm.Flag("--quiet", self.quiet),
@@ -132,7 +132,7 @@ class CommitOptions:
     file_message: str = ...
     commit: str = ...
 
-    def opts(self) -> List[pytcm.Option]:
+    def to_list(self) -> List[pytcm.Option]:
         return [
             self.COMMAND,
             pytcm.Flag("--all", self.all_files),

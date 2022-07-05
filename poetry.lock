@@ -398,7 +398,7 @@ diagrams = ["railroad-diagrams", "jinja2"]
 
 [[package]]
 name = "pytcm"
-version = "0.5.4"
+version = "0.5.6"
 description = "pytcm - Python Terminal Commands Manager"
 category = "main"
 optional = false
@@ -696,7 +696,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "f7d805af8f71093f8ff6ca0487b61b45d8aeb1257c16a89f9a2d5b42386c8156"
+content-hash = "cd0d48733f0829e1f39508834d1b862eee144776d6ac84217c5829fe0b1245c0"
 
 [metadata.files]
 atomicwrites = [
@@ -971,8 +971,8 @@ pyparsing = [
     {file = "pyparsing-3.0.9.tar.gz", hash = "sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb"},
 ]
 pytcm = [
-    {file = "pytcm-0.5.4-py3-none-any.whl", hash = "sha256:ea876e5eb2740b08ac7baf0254f323f474d9630728d399d175db6e1b522744d3"},
-    {file = "pytcm-0.5.4.tar.gz", hash = "sha256:b5f15accc6016b3919d232d73f61793d368214150704d108c74b4c00b89af059"},
+    {file = "pytcm-0.5.6-py3-none-any.whl", hash = "sha256:c628c68c4de272829f57a8258f633e371086e1e057e22145c4f975692980c7ba"},
+    {file = "pytcm-0.5.6.tar.gz", hash = "sha256:1debb06c3e4eb80acb84f9c3f72b292045d63212faf9cca458de600d9b7c7b46"},
 ]
 pytest = [
     {file = "pytest-7.1.2-py3-none-any.whl", hash = "sha256:13d0e3ccfc2b6e26be000cb6568c832ba67ba32e719443bfe725814d3c42433c"},
