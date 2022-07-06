@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.5.0 (2022-07-06)
+### Feature
+* Force build (publish to pypi) ([`e434c50`](https://github.com/alexisbeaulieu97/pygitm/commit/e434c501b8ba261218a98216026335b880ce254d))
+
 ## v0.4.1 (2022-07-05)
 ### Fix
 * Test ([`7b63758`](https://github.com/alexisbeaulieu97/pygitm/commit/7b637583c2cbef0252743165540aea58644bcc77))

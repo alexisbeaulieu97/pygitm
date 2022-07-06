@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pygitm"
-version = "0.4.1"
+version = "0.5.0"
 description = "A git library written in Python"
 authors = ["Alexis Beaulieu <alexisbeaulieu97@gmail.com>"]
 readme = "README.md"
