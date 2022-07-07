@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.7.0 (2022-07-07)
+### Feature
+* Added workspace and repository classes to hold context ([`8085ad5`](https://github.com/alexisbeaulieu97/pygitm/commit/8085ad5343a290c64a3658ce607656e01c1882fd))
+
 ## v0.6.0 (2022-07-06)
 ### Feature
 * Temporarily disabled auth ([`a5df73a`](https://github.com/alexisbeaulieu97/pygitm/commit/a5df73a5a31b95fe9fcb3b0e0ee2e3ffc66ef828))
