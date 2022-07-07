@@ -4,8 +4,14 @@ from functools import partial
 
 import pytcm
 
-from pygitm.options import (AddOptions, CheckoutOptions, CloneOptions,
-                            CommitOptions, PullOptions, PushOptions)
+from pygitm.options import (
+    AddOptions,
+    CheckoutOptions,
+    CloneOptions,
+    CommitOptions,
+    PullOptions,
+    PushOptions,
+)
 
 git_command = partial(pytcm.execute, "git")
 

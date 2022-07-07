@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import getpass
-import os
+# flake8: noqa
 
-from pygitm.constants import PYGITM_PASSWORD, PYGITM_SSH_KEY, PYGITM_USERNAME
+# import getpass
+# import os
+
+# from pygitm.constants import PYGITM_PASSWORD, PYGITM_SSH_KEY, PYGITM_USERNAME
 
 
 # class SSHAuth:
