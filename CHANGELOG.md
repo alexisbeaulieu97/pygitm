@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.6.0 (2022-07-06)
+### Feature
+* Temporarily disabled auth ([`a5df73a`](https://github.com/alexisbeaulieu97/pygitm/commit/a5df73a5a31b95fe9fcb3b0e0ee2e3ffc66ef828))
+
 ## v0.5.0 (2022-07-06)
 ### Feature
 * Force build (publish to pypi) ([`e434c50`](https://github.com/alexisbeaulieu97/pygitm/commit/e434c501b8ba261218a98216026335b880ce254d))
