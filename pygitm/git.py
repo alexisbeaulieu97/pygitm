@@ -38,3 +38,11 @@ def checkout(opts: CheckoutOptions, cwd: str = ...) -> pytcm.CommandResult:
 
 def commit(opts: CommitOptions, cwd: str = ...) -> pytcm.CommandResult:
     return git_command(opts.to_list(), cwd)
+
+
+def is_git_repo(cwd: str = ...) -> bool:
+    c_result = git_command(
+        [pytcm.Positional("rev-parse"), pytcm.Flag("--is-inside-work-tree", True)], cwd
+    )
+
+    return c_result.out.strip() == 'true'

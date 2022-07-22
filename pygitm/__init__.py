@@ -2,7 +2,7 @@
 
 # flake8: noqa
 
-from .git import add, checkout, clone, commit, pull, push
+from .git import add, checkout, clone, commit, pull, push, is_git_repo
 from .options import (
     AddOptions,
     CheckoutOptions,
