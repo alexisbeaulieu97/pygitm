@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.8.0 (2022-07-22)
+### Feature
+* Added a command to verify that a directory is a git repository ([`63083a6`](https://github.com/alexisbeaulieu97/pygitm/commit/63083a6b4e4d561dd749a141534c95bada06ae12))
+
 ## v0.7.0 (2022-07-07)
 ### Feature
 * Added workspace and repository classes to hold context ([`8085ad5`](https://github.com/alexisbeaulieu97/pygitm/commit/8085ad5343a290c64a3658ce607656e01c1882fd))
