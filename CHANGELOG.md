@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.10.0 (2022-07-25)
+### Feature
+* Added function to get local repository top level directory ([`3c64f39`](https://github.com/alexisbeaulieu97/pygitm/commit/3c64f39382e6ce750654e31c785e8095101d22a8))
+
 ## v0.9.0 (2022-07-25)
 ### Feature
 * Added a command to retrieve the origin remote uri ([`e3d0a5e`](https://github.com/alexisbeaulieu97/pygitm/commit/e3d0a5e7ff9526c044c1facc65c64174da25cf3c))
