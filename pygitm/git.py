@@ -45,4 +45,17 @@ def is_git_repo(cwd: str = ...) -> bool:
         [pytcm.Positional("rev-parse"), pytcm.Flag("--is-inside-work-tree", True)], cwd
     )
 
-    return c_result.out.strip() == 'true'
+    return c_result.out.strip() == "true"
+
+
+def get_origin_remote(cwd: str = ...) -> str:
+    c_result = git_command(
+        [
+            pytcm.Positional("config"),
+            pytcm.Flag("--get", True),
+            pytcm.Positional("remote.origin.url"),
+        ],
+        cwd,
+    )
+
+    return c_result.out.strip()
