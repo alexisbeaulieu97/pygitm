@@ -59,3 +59,10 @@ def get_origin_remote(cwd: str = ...) -> str:
     )
 
     return c_result.out.strip()
+
+
+def get_top_level(cwd: str = ...) -> str:
+    c_result = git_command(
+        [pytcm.Positional("rev-parse"), pytcm.Flag("--show-toplevel", True)], cwd
+    )
+    return c_result.out.strip()

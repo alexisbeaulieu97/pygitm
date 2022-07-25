@@ -8,6 +8,7 @@ from .git import (
     clone,
     commit,
     get_origin_remote,
+    get_top_level,
     is_git_repo,
     pull,
     push,
