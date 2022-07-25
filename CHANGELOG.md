@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.9.0 (2022-07-25)
+### Feature
+* Added a command to retrieve the origin remote uri ([`e3d0a5e`](https://github.com/alexisbeaulieu97/pygitm/commit/e3d0a5e7ff9526c044c1facc65c64174da25cf3c))
+
 ## v0.8.0 (2022-07-22)
 ### Feature
 * Added a command to verify that a directory is a git repository ([`63083a6`](https://github.com/alexisbeaulieu97/pygitm/commit/63083a6b4e4d561dd749a141534c95bada06ae12))
