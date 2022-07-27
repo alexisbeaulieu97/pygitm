@@ -41,7 +41,7 @@ class AddOptions:
         if self.pathspec is not ...:
             pathspec = [pytcm.Positional(p) for p in self.pathspec]
 
-        opts = [self.COMMAND, self.verbose]
+        opts = [self.COMMAND, pytcm.Flag("--verbose", self.verbose)]
         opts.extend(pathspec)
 
         return opts
