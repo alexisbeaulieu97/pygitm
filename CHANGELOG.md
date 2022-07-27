@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.10.1 (2022-07-27)
+### Fix
+* Fixed parsing of verbose flag in add command ([`49ad6c7`](https://github.com/alexisbeaulieu97/pygitm/commit/49ad6c7ed9b605a12962efa7f13b68b79a0bf437))
+
 ## v0.10.0 (2022-07-25)
 ### Feature
 * Added function to get local repository top level directory ([`3c64f39`](https://github.com/alexisbeaulieu97/pygitm/commit/3c64f39382e6ce750654e31c785e8095101d22a8))
